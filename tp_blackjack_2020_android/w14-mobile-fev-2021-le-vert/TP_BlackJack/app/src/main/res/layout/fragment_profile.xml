@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ProfileActivity">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            app:srcCompat="@drawable/profile_icon" />
+
+        <TextView
+            android:id="@+id/tv_username_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_semibold"
+            android:gravity="center"
+            android:text="My username"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/tv_email_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_semibold"
+            android:gravity="center"
+            android:text="email@example.com"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/quicksand_semibold"
+            android:text="Your funds:"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_balance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_semibold"
+            android:gravity="center"
+            android:text="20$"
+            android:textColor="@color/black"
+            android:textSize="40dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/quicksand_semibold"
+            android:text="Add funds:"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:fontFamily="@font/quicksand_semibold"
+            android:text="(Taken from your credit card)"
+            android:textColor="#808080"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/btn_15_dollars"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="80dp"
+            android:backgroundTint="#98FB9D"
+            android:fontFamily="@font/quicksand_semibold"
+            android:text="15$"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/btn_25_dollars"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="80dp"
+            android:backgroundTint="#98FB9D"
+            android:fontFamily="@font/quicksand_semibold"
+            android:text="25$"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/btn_50_dollars"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="80dp"
+            android:backgroundTint="#98FB9D"
+            android:fontFamily="@font/quicksand_semibold"
+            android:text="50$"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/quicksand_semibold"
+            android:gravity="center"
+            android:text="Log out"
+            android:textColor="#DC2B7E"
+            android:textSize="30dp"
+            android:onClick="logoutClick"/>
+        <TextView
+            android:id="@+id/tv_testing_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="test"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

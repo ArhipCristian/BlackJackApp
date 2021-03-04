@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/quicksand_semibold"
+            android:gravity="center"
+            android:text="Make your bets!"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp">
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/quicksand_semibold"
+                android:gravity="right"
+                android:text="Bet: "
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/tv_bet"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/quicksand_semibold"
+                android:gravity="left"
+                android:text="5$ "
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+            <ImageView
+                android:id="@+id/img_cancel"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="50dp"
+                android:src="@drawable/cancel"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/quicksand_semibold"
+            android:gravity="center"
+            android:text="Click below to add to your bet"
+            android:textColor="#575757"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/btn_bet_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="80dp"
+            android:backgroundTint="#98FB9D"
+            android:fontFamily="@font/quicksand_semibold"
+            android:text="5$"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/btn_bet_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="80dp"
+            android:backgroundTint="#98FB9D"
+            android:fontFamily="@font/quicksand_semibold"
+            android:text="20$"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/btn_bet_50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="80dp"
+            android:backgroundTint="#98FB9D"
+            android:fontFamily="@font/quicksand_semibold"
+            android:text="50$"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="bottom"
+                android:layout_margin="20dp"
+                android:src="@drawable/money"/>
+
+            <TextView
+                android:id="@+id/tv_balance_play"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/quicksand_semibold"
+                android:text="100$"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/btn_start_game"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:backgroundTint="#93C0FA"
+                android:text="Play"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
